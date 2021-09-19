@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Country extends Model
 {
     use HasFactory;
-    protected $table="country";
+    protected $table="Country";
 	public $timestamps = false;
 
     public function userCreated()
