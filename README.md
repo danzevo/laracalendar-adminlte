@@ -16,3 +16,4 @@ feature :
 1. Composer Install
 2. npm Install
 3. php artisan migrate
+4. npm run dev
