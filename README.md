@@ -19,3 +19,4 @@ feature :
 4. php artisan migrate
 5. npm run dev
 6. php artisan key:generate
+7. composer dump-autoload
