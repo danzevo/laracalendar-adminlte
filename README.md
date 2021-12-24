@@ -13,7 +13,9 @@ feature :
 2. Rest api with sanctum
 
 ## Installation
-1. Composer Install
-2. npm Install
-3. php artisan migrate
-4. npm run dev
+1. cp .env.example .env
+2. Composer Install
+3. npm Install
+4. php artisan migrate
+5. npm run dev
+6. php artisan key:generate
