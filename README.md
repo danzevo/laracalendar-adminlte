@@ -10,7 +10,8 @@
 ## laravel crud with adminlte
 feature : 
 1. Auth
-2. Rest api with sanctum
+2. crud template with datatable & ajax
+3. Rest api with sanctum
 
 ## Installation
 1. cp .env.example .env
