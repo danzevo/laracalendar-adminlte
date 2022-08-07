@@ -10,7 +10,7 @@
 ## laravel crud with adminlte
 feature : 
 1. Auth
-2. crud template with datatable & ajax
+2. Create schedule calendar using ajax
 3. Rest api with sanctum
 
 ## Installation
