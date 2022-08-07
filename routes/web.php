@@ -21,14 +21,9 @@ Auth::routes();
 
 Route::group(['middleware' => ['auth']], function() {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-    Route::get('admin/city', [App\Http\Controllers\CityController::class, 'index'])->name('city');
-    Route::get('admin/city/get-data', [App\Http\Controllers\CityController::class, 'getData']);
-    Route::post('admin/city/save', [App\Http\Controllers\CityController::class, 'store']);
-    Route::post('admin/city/save_published', [App\Http\Controllers\CityController::class, 'save_published']);
-    Route::post('admin/city/destroy/{id}', [App\Http\Controllers\CityController::class, 'destroy']);
-    Route::get('admin/country', [App\Http\Controllers\CountryController::class, 'index'])->name('country');
-    Route::get('admin/country/get-data', [App\Http\Controllers\CountryController::class, 'getData']);
-    Route::post('admin/country/save', [App\Http\Controllers\CountryController::class, 'store']);
-    Route::post('admin/country/save_published', [App\Http\Controllers\CountryController::class, 'save_published']);
-    Route::post('admin/country/destroy/{id}', [App\Http\Controllers\CountryController::class, 'destroy']);
+    Route::get('event', [App\Http\Controllers\EventController::class, 'index'])->name('event');
+    Route::get('event/get-data', [App\Http\Controllers\EventController::class, 'getData']);
+    Route::post('event/save', [App\Http\Controllers\EventController::class, 'store']);
+    Route::put('event/update/{id}', [App\Http\Controllers\EventController::class, 'update']);
+    Route::post('event/destroy/{id}', [App\Http\Controllers\EventController::class, 'destroy']);
 });

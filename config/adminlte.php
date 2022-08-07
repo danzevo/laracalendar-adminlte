@@ -236,14 +236,10 @@ return [
             'topnav_right' => true,
         ],
 
-        ['header' => 'REGION'],
+        ['header' => 'Schedule event'],
         [
-            'text'        => 'Country',
-            'url'         => 'admin/country',
-        ],
-        [
-            'text'        => 'City',
-            'url'         => 'admin/city',
+            'text'        => 'Event',
+            'url'         => 'event',
         ],
     ],
 
@@ -296,6 +292,11 @@ return [
                     'location' => '//cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js',
                 ],
                 [
+                    'type' => 'js',
+                    'asset' => false,
+                    'location' => '//code.jquery.com/ui/1.13.2/jquery-ui.js',
+                ],
+                [
                     'type' => 'css',
                     'asset' => false,
                     'location' => '//cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css',
@@ -305,6 +306,11 @@ return [
                     'type' => 'css',
                     'asset' => false,
                     'location' => '//cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css',
+                ],
+                [
+                    'type' => 'css',
+                    'asset' => false,
+                    'location' => '//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css',
                 ],
             ],
         ],

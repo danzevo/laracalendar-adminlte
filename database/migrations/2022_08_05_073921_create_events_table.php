@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCountryTable extends Migration
+class CreateEventsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,12 @@ class CreateCountryTable extends Migration
      */
     public function up()
     {
-        Schema::create('Country', function (Blueprint $table) {
+        Schema::create('events', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->nullable();
-            $table->string('slug')->nullable();
-            $table->smallInteger('created_by')->nullable();
-            $table->smallInteger('last_modified_by')->nullable();
-            $table->smallInteger('published')->nullable();
+            $table->string('method');
+            // $table->string('month');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
@@ -31,6 +29,6 @@ class CreateCountryTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('Country');
+        Schema::dropIfExists('events');
     }
 }
