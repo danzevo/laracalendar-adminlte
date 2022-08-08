@@ -605,7 +605,7 @@ class EventController extends Controller
             $validated = Validator::make($req->all(), [
                 'method' => 'required|max:255',
                 'name' => 'required|max:255',
-                'from_date' => 'required|date',
+                'from_date' => 'required|date_format:"d/m/Y"',
             ]);
 
             if ($validated->fails()) {
@@ -667,7 +667,7 @@ class EventController extends Controller
             $validated = Validator::make($req->all(), [
                 'method' => 'required|max:255',
                 'name' => 'required|max:255',
-                'from_date' => 'required|date',
+                'from_date' => 'required|date_format:"d/m/Y"',
             ]);
 
             if ($validated->fails()) {
