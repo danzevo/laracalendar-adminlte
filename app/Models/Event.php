@@ -23,6 +23,8 @@ class Event extends Model
             $where = ' and status = \''.$status.'\'';
         }
 
+        $user = auth()->user()->id;
+
         $sql =
 <<<EOT
         select distinct
@@ -49,6 +51,7 @@ class Event extends Model
                     "event_details"
                 RIGHT JOIN events on events.id = event_details.event_id
                 where event_details.deleted_at is null and events.deleted_at is null
+                and events.user_id = $user
                 $where
                 ORDER BY events.id
 EOT;

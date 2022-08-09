@@ -624,7 +624,8 @@ class EventController extends Controller
             }
 
             $data = Event::create([
-                    'method' => $req->method
+                    'method' => $req->method,
+                    'user_id' => auth()->user()->id,
                 ]);
 
             if ($data) {
