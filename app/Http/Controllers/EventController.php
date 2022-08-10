@@ -489,8 +489,8 @@ class EventController extends Controller
                 $result .= '<td style="vertical-align: middle;">' . $method[$value] . '</td>';
 
                 if(array_filter($month_1[$value])) {
-                    $result .= '<td>';
-                            $result .='<ul>';
+                    $result .= '<td class="text-center">';
+                            $result .='<ul class="text-left">';
                             foreach($month_1[$value] as $m1) {
                                 if($m1) {
                                     $result .= '<li>';
@@ -498,15 +498,16 @@ class EventController extends Controller
                                     $result .= '</li>';
                                 }
                             }
-                            $result .='<ul>';
+                            $result .='</ul>';
+                            $result .= '<a href="javascript:void(0)" data-toggle="modal" data-target="#InputModal" title="tambah event" onclick="resetForm();tambahEvent('.$event_id[$value].',\''.$method[$value].'\')" class="btn btn-sm btn-success">+</a>';
                     $result .= '</td>';
                 } else {
                     $result .= '<td class="text-center" style="vertical-align: middle;"><a href="javascript:void(0)" data-toggle="modal" data-target="#InputModal" title="tambah event" onclick="resetForm();tambahEvent('.$event_id[$value].',\''.$method[$value].'\')" class="btn btn-sm btn-success">+</a></td>';
                 }
 
                 if(array_filter($month_2[$value])) {
-                    $result .= '<td>';
-                            $result .='<ul>';
+                    $result .= '<td class="text-center">';
+                            $result .='<ul class="text-left">';
                             foreach($month_2[$value] as $m2) {
                                 if($m2) {
                                     $result .= '<li>';
@@ -514,15 +515,16 @@ class EventController extends Controller
                                     $result .= '</li>';
                                 }
                             }
-                            $result .='<ul>';
+                            $result .='</ul>';
+                            $result .= '<a href="javascript:void(0)" data-toggle="modal" data-target="#InputModal" title="tambah event" onclick="resetForm();tambahEvent('.$event_id[$value].',\''.$method[$value].'\')" class="btn btn-sm btn-success">+</a>';
                     $result .= '</td>';
                 } else {
                     $result .= '<td class="text-center" style="vertical-align: middle;"><a href="javascript:void(0)" data-toggle="modal" data-target="#InputModal" title="tambah event" onclick="resetForm();tambahEvent('.$event_id[$value].',\''.$method[$value].'\')" class="btn btn-sm btn-success">+</a></td>';
                 }
 
                 if(array_filter($month_3[$value])) {
-                    $result .= '<td>';
-                            $result .='<ul>';
+                    $result .= '<td class="text-center">';
+                            $result .='<ul class="text-left">';
                             foreach($month_3[$value] as $m3) {
                                 if($m3) {
                                     $result .= '<li>';
@@ -530,15 +532,16 @@ class EventController extends Controller
                                     $result .= '</li>';
                                 }
                             }
-                            $result .='<ul>';
+                            $result .='</ul>';
+                            $result .= '<a href="javascript:void(0)" data-toggle="modal" data-target="#InputModal" title="tambah event" onclick="resetForm();tambahEvent('.$event_id[$value].',\''.$method[$value].'\')" class="btn btn-sm btn-success">+</a>';
                     $result .= '</td>';
                 } else {
                     $result .= '<td class="text-center" style="vertical-align: middle;"><a href="javascript:void(0)" data-toggle="modal" data-target="#InputModal" title="tambah event" onclick="resetForm();tambahEvent('.$event_id[$value].',\''.$method[$value].'\')" class="btn btn-sm btn-success">+</a></td>';
                 }
 
                 if(array_filter($month_4[$value])) {
-                    $result .= '<td>';
-                            $result .='<ul>';
+                    $result .= '<td class="text-center">';
+                            $result .='<ul class="text-left">';
                             foreach($month_4[$value] as $m4) {
                                 if($m4) {
                                     $result .= '<li>';
@@ -546,15 +549,16 @@ class EventController extends Controller
                                     $result .= '</li>';
                                 }
                             }
-                            $result .='<ul>';
+                            $result .='</ul>';
+                            $result .= '<a href="javascript:void(0)" data-toggle="modal" data-target="#InputModal" title="tambah event" onclick="resetForm();tambahEvent('.$event_id[$value].',\''.$method[$value].'\')" class="btn btn-sm btn-success">+</a>';
                     $result .= '</td>';
                 } else {
                     $result .= '<td class="text-center" style="vertical-align: middle;"><a href="javascript:void(0)" data-toggle="modal" data-target="#InputModal" title="tambah event" onclick="resetForm();tambahEvent('.$event_id[$value].',\''.$method[$value].'\')" class="btn btn-sm btn-success">+</a></td>';
                 }
 
                 if(array_filter($month_5[$value])) {
-                    $result .= '<td>';
-                            $result .='<ul>';
+                    $result .= '<td class="text-center">';
+                            $result .='<ul class="text-left">';
                             foreach($month_5[$value] as $m5) {
                                 if($m5) {
                                     $result .= '<li>';
@@ -562,15 +566,16 @@ class EventController extends Controller
                                     $result .= '</li>';
                                 }
                             }
-                            $result .='<ul>';
+                            $result .='</ul>';
+                            $result .= '<a href="javascript:void(0)" data-toggle="modal" data-target="#InputModal" title="tambah event" onclick="resetForm();tambahEvent('.$event_id[$value].',\''.$method[$value].'\')" class="btn btn-sm btn-success">+</a>';
                     $result .= '</td>';
                 } else {
                     $result .= '<td class="text-center" style="vertical-align: middle;"><a href="javascript:void(0)" data-toggle="modal" data-target="#InputModal" title="tambah event" onclick="resetForm();tambahEvent('.$event_id[$value].',\''.$method[$value].'\')" class="btn btn-sm btn-success">+</a></td>';
                 }
 
                 if(array_filter($month_6[$value])) {
-                    $result .= '<td>';
-                            $result .='<ul>';
+                    $result .= '<td class="text-center">';
+                            $result .='<ul class="text-left">';
                             foreach($month_6[$value] as $m6) {
                                 if($m6) {
                                     $result .= '<li>';
@@ -578,13 +583,14 @@ class EventController extends Controller
                                     $result .= '</li>';
                                 }
                             }
-                            $result .='<ul>';
+                            $result .='</ul>';
+                            $result .= '<a href="javascript:void(0)" data-toggle="modal" data-target="#InputModal" title="tambah event" onclick="resetForm();tambahEvent('.$event_id[$value].',\''.$method[$value].'\')" class="btn btn-sm btn-success">+</a>';
                     $result .='</td>';
                 } else {
                     $result .= '<td class="text-center" style="vertical-align: middle;"><a href="javascript:void(0)" data-toggle="modal" data-target="#InputModal" title="tambah event" onclick="resetForm();tambahEvent('.$event_id[$value].',\''.$method[$value].'\')" class="btn btn-sm btn-success">+</a></td>';
                 }
 
-                $result .= '<td class="text-center">
+                $result .= '<td class="text-center" style="vertical-align: middle;">
                                 <a href="javascript:void(0)" class="btn btn-sm btn-danger" onclick="deleteEvent('.$event_id[$value].')" title="Hapus data">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
                                         <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
@@ -709,9 +715,11 @@ class EventController extends Controller
                         'month' => date('m', strtotime(str_replace('/', '-', $req->from_date))),
                     ]);
                 } else {
-                    $event_detail = EventDetail::where('month', $get_month)->where('event_id', $id)->first();
+                    /* $event_detail = EventDetail::where('from_date', date('Y-m-d', strtotime(str_replace('/', '-', $req->from_date))))->
+                                                    where('to_date', date('Y-m-d', strtotime(str_replace('/', '-', $req->to_date))))->
+                                                    where('event_id', $id)->first(); */
 
-                    if($event_detail) {
+                    /* if($event_detail) {
                         $event_detail->update([
                             'name' => $req->name,
                             'from_date' => date('Y-m-d', strtotime(str_replace('/', '-', $req->from_date))),
@@ -719,7 +727,7 @@ class EventController extends Controller
                             'status' => $req->status,
                             'month' => date('m', strtotime(str_replace('/', '-', $req->from_date))),
                         ]);
-                    } else {
+                    } else { */
                         EventDetail::create([
                             'name' => $req->name,
                             'event_id' => $id,
@@ -728,7 +736,7 @@ class EventController extends Controller
                             'status' => $req->status,
                             'month' => date('m', strtotime(str_replace('/', '-', $req->from_date))),
                         ]);
-                    }
+                    // }
                 }
             }
 
